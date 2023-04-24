@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+div {
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: #333; */
+    height: 70px;
+    padding: 0 20%;
+    border-bottom: rgb(231, 231, 231) 2px solid;
+  }
+  
+  /* .navbar-logo {
+    align-self: center;
+  } */
+  
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar-link  {
+    display: block;
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    /* padding: 6px 16px; */
+    width: 140px;
+    text-decoration: none;
+    height: 27px;
+  }
+
+  .navbar-list a{
+    padding: 20px;
+  }
+  
+  .navbar-link:hover {
+    padding-top: 18px;
+    border-bottom: rgb(253, 221, 226) 3px solid;
+  }
+
+  .navbar-logo{
+    /* margin-right: 30px; */
+  }
+  

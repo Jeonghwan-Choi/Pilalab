@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+div {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.aiProductList{
+  /* justify-content: space-between; */
+  align-items: center;
+  /* background-color: #333; */
+  /* height: 70px; */
+  padding: 0 20%;
+}
+
+.itemList{
+  display: flex; /* 부모 요소를 플렉스 박스로 설정 */
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.title{
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: rgb(116, 116, 116);
+  margin-left: 10px;
+}
+

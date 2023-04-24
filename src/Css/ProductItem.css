@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.ProductItem{
+    width: 400px;
+    height: 415px;
+    /* border: 1px solid rgb(199, 199, 199); */
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-decoration-line: none;
+    text-align: left;
+    border-radius: 5px;
+
+}
+
+.ProductItem_Img{
+    width: 400px;
+    height: 290px;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    
+}
+
+.ProductItem_Title, .ProductItem_Company, .ProductItem_Location, .ProductItem_CreateTime{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(49, 49, 49);
+    font-size:19px;
+    font-weight: 500;
+    margin-bottom: 2px;
+
+}
+
+.ProductItem_Title{
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.ProductItem_Location{
+    color: gray;
+}
