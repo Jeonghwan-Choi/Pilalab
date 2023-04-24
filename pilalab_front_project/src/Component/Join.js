@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../Css/Join.css';
 import Logo from '../logo.svg';
-import KakaoButton from '../Component/KakaoButton';
+import KakaoButton from './KakaoButton';
 
 class Join extends Component {
   constructor(props) {

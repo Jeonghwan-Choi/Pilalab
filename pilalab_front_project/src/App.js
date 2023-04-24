@@ -4,12 +4,12 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 // import './App.css';
 import './Css/Navbar.css';
-import Navbar from '../src/Component/Navbar';
-import Join from '../src/Component/Join';
-import AiProductList from '../src/Component/AiProductList';
-import NewProductList from '../src/Component/NewProductList';
-import KakaoButton from '../src/Component/KakaoButton';
-import Main from '../src/Component/Main'
+import Navbar from './Component/Navbar';
+import Join from './Component/Join';
+import AiProductList from './Component/AiProductList';
+import NewProductList from './Component/NewProductList';
+import KakaoButton from './Component/KakaoButton';
+import Main from './Component/Main'
 class App extends Component {
  
 

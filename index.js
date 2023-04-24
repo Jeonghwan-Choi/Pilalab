@@ -1,39 +1,30 @@
-// var axios = require('axios');
-var cors = require('cors');
-
-
-console.log('ReStart=>=>=>=>=>=>=>=ReStart=>=>=>=>=>=>=>=ReStart=>=>=>=>=>=>=>=ReStart=>=>=>=>=>=>=>=ReStart=>=>=>=>=>=>=>=ReStart=>=>=>=>=>=>=>=')
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-var port = process.env.PORT || 8001;
-console.log('')
-// var router = require('./routes')(app);
-// // [RUN SERVER]
-var server = app.listen(port, function () { console.log("Express server has started on port " + port) });
-
-// const express = require("express");
+// const express = require('express');
+// const path = require('path');
 // const app = express();
-const PORT = 3000;
+// const port = process.env.PORT || 8001;
 
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    credentials: true,
-};
-console.log('corsOptions',corsOptions)
-app.use(cors(corsOptions));
-// 정적 파일 불러오기
-app.use(express.static(__dirname + "/views"));
+// console.log('__dirname', __dirname);
 
-// 라우팅 정의.start.html
-app.get("/", cors(), (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-});
+// app.use(express.static(path.join(__dirname, 'build')));
+
+// app.get('/', function(req, res) {
+//   res.sendFile(path.join(__dirname, 'build', 'Pilalab_React/public/index.html'));
+// });
+
+// app.listen(port, () => {
+//   console.log(`App listening at http://localhost:${port}`);
+// });
 
 
-// 서버 실행
-app.listen(PORT, () => {
-    console.log(`Listen : ${PORT}`);
-});
+var express = require('express')
+var app = express()
+
+app.use(express.static(__dirname + '/pilalab_front_project/build'))
+
+app.get('/', (req, res) => {
+    res.sendFile('index.html')
+})
+
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server is running : port 3000')
+})
